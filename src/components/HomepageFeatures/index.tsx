@@ -11,32 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Embedded by default',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Use <code>@liorandb/core</code> as a file-based database inside Node.js scripts and apps — no server required.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Optional server + CLI',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Install <code>@liorandb/db</code> to run <code>ldb-serve</code>, manage users with <code>ldb-users</code>, and use the interactive shell <code>ldb-cli</code>.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'TypeScript-first driver',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Use <code>@liorandb/driver</code> to talk to a server over HTTP with prebuilt types and a small API surface.
       </>
     ),
   },
