@@ -70,7 +70,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/liorandb-social-card.jpg',
+    metadata: [
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:image', content: '/img/liorandb.png'},
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
