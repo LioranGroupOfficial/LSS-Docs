@@ -8,6 +8,7 @@ import Heading from '@theme/Heading';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
+import { FiZap, FiServer } from 'react-icons/fi';
 
 import styles from './index.module.css';
 
@@ -25,13 +26,17 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/embedded/getting-started">
-            Embedded quickstart
+            to="/docs/embedded/getting-started"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            {/* 2. Add the icon before the text */}
+            <FiZap /> Embedded quickstart
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/server/server-quickstart">
-            Server quickstart
+            to="/docs/server/server-quickstart"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            {/* 3. Add the icon before the text */}
+            <FiServer /> Server quickstart
           </Link>
         </div>
         <div className={styles.codeSample}>
